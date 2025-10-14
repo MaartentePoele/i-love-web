@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding: 1rem;
+}
+
+header {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: fit-content;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  font-size: large;
+}
+
+.nav-links {
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  text-decoration: underline;
+}
+
+.semesters-container {
+  display: flex;
+  justify-self: center;
+  gap: 1rem;
+}
+
+section {
+  width: 21rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+h2 {
+  margin-bottom: .5rem;
+}
+
+p {
+  margin: 0;
+}
+
+.sprint-links {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+a {
+  color: black;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: .5rem;
+}
+
+.h1-container {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+}
