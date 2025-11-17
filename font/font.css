@@ -1,0 +1,39 @@
+.cm blockquote p {
+  max-width: 11cm;
+}
+
+.mm blockquote p {
+  max-width: 110mm;
+}
+
+.px blockquote p {
+  max-width: 407px;
+}
+
+.em blockquote p {
+  max-width: 26em;
+}
+
+.ch blockquote p {
+  max-width: 53ch;
+}
+
+.rem blockquote p {
+  max-width: 26rem;
+}
+
+.vw blockquote p {
+  max-width: 27vw;
+}
+
+.cqw blockquote p {
+  max-width: 27cqw;
+}
+
+.dvw blockquote p {
+  max-width: 27dvw;
+}
+
+.vmax blockquote p {
+  max-width: 27vmax;
+}
