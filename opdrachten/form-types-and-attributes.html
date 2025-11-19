@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <p>
+    <b>Checkout 19-11-2025: </b>
+  <ul>
+    <li>Waarom heeft elke input een label nodig?</li>
+    <ul>
+      <li>Zodat het duidelijk is waar de input voor is</li>
+      <label for="name">Naam:</label>
+      <input type="text">
+    </ul>
+    <li>Wat doe je met de attributen type, autocomplete, inputmode en enterkeyhint</li>
+    <ul>
+      <li>Type wordt gebruikt om het type input te specificeren.</li>
+      <input type="number">
+      <li>Autocomplete wordt gebruikt als hulpmiddel om inputvelden in te voeren.</li>
+      <input type="email" autocomplete="email">
+      <li>Inputmode wordt gebruikt om het toetsenbord te veranderen om het voor de gebruiker makkelijker te maken om een invoerveld in te voeren.</li>
+      <input type="text" inputmode="numeric">
+      <li>Enterkeyhint wordt gebruikt om de button rechtsonder in een mobiele toetsenbord aan te passen naar bijvoorbeeld search.</li>
+      <input type="search" enterkeyhint="search">
+    </ul>
+    <li>Wat doen fieldsets en legends in een formulier?</li>
+    <ul>
+      <li>Fieldsets wordt gebruikt om meerdere inputs en labels in een formulier te groeperen. Een legend is de titel van die fieldset.</li>
+      <fieldset>
+        <legend>Hoeveel?</legend>
+        <input type="radio">
+        <label for="1">1</label>
+        <input type="radio">
+        <label for="2">2</label>
+        <input type="radio">
+        <label for="3">3</label>
+      </fieldset>
+    </ul>
+    <li>Wat doen required, maxlength, min, max, step?</li>
+    <ul>
+      <li>Required wordt gebruikt voor inputvelden die ingevuld moeten worden.</li>
+      <label for="password">Password*</label>
+      <input type="password" required>
+      <li>Maxlength wordt gebruikt om het maximaal aantal karakters voor een inputveld te bepalen.</li>
+      <input type="text" maxlength="5">
+      <li>Min en max worden gebruikt om een minimale en maximale waarde van een inputveld. Step wordt gebruikt om de hoeveelheid per stap aan te geven.</li>
+      <input type="number" min="10" max="100" step="10">
+    </ul>
+    <li>Welke input pseudo-classes ken je nog niet?</li>
+    <ul>
+      <li>:read-write highlights een textarea dat de gebruiker kan aanpassen.</li>
+      <textarea></textarea>
+      <style>
+        textarea:read-write {
+          border-radius: 5px;
+        }
+      </style>
+      <li>:indeterminate wordt gebruikt om aan te geven dat bijvoorbeeld een checkbox nog niet is aangeklikt of uit is gezet.</li>
+      <input class="checkbox" type="checkbox">
+      <style>
+        .checkbox:indeterminate {
+          box-shadow: 0 0 5px 3px red;
+        }
+      </style>
+    </ul>
+  </ul>
+  </p>
+
+</body>
+
+</html>
