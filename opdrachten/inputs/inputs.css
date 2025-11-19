@@ -1,0 +1,20 @@
+* {
+  font-family: Arial;
+  font-size: 1rem;
+}
+
+input:nth-of-type(1) {
+  appearance: none;
+  border: 1px solid grey;
+  transition: 0.3s;
+
+  &:focus {
+    outline: none;
+    border: 1px solid red;
+    border-radius: 0.25em;
+  }
+
+  &:valid {
+    border: 1px solid blue;
+  }
+}
