@@ -7,10 +7,7 @@ input:nth-of-type(1) {
   appearance: none;
   border: 1px solid grey;
   transition: 0.3s;
-  border-radius: 1em;
-  overflow: hidden;
-
-  /* aspect-ratio: 1; */
+  border-radius: 0.25em;
 
   &:focus {
     outline: none;
@@ -18,9 +15,13 @@ input:nth-of-type(1) {
   }
 
   &:valid {
-    border-image: linear-gradient(var(--angle) in hsl longer hue, red, red) 1;
-
-    /* border-image: linear-gradient(var(--angle), #12c2e9, #c471ed, #f64f59) 1; */
+    border-image: linear-gradient(
+        var(--angle, 0deg) in hsl longer hue,
+        red,
+        red,
+        red
+      )
+      1;
 
     animation-name: draaien;
     animation-duration: 3s;
