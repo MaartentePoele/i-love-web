@@ -1,0 +1,38 @@
+html {
+  color-scheme: light dark;
+
+  --bg-dark: light-dark(oklch(90% 0 0), oklch(0% 0 0));
+  --bg: light-dark(oklch(95% 0 0), oklch(5% 0 0));
+  --bg-light: light-dark(oklch(100% 0 0), oklch(10% 0 0));
+}
+
+html:has( [value="light"]:checked ) {
+	color-scheme:light;
+}
+
+html:has( [value="dark"]:checked ) {
+	color-scheme:dark;
+}
+
+body {
+  background-color: darkslateblue;
+}
+
+.dark-mode {
+  background-color: var(--bg-dark);
+  border: 1px solid gray;
+  width: 250px;
+  height: 500px;
+
+  div {
+    width: 200px;
+    height: 400px;
+    background-color: var(--bg);
+
+    div {
+      height: 100px;
+      width: 100px;
+      background-color: var(--bg-light);
+    }
+  }
+}
