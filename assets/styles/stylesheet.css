@@ -7,4 +7,31 @@ html {
 
   --text-primary: light-dark(oklch(5% 0 0), oklch(95% 0 0));
   --text-secondary: light-dark(oklch(25% 0 0), oklch(75% 0 0));
+
+  --font-size-s: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    li {
+      list-style: none;
+      padding: .5rem;
+      border-radius: 1rem;
+
+      a {
+        color: var(--text-secondary);
+        text-decoration: none;
+      }
+    }
+  }
 }
