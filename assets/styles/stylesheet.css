@@ -9,6 +9,10 @@ html {
   --text-secondary: light-dark(oklch(25% 0 0), oklch(75% 0 0));
 
   --font-size-s: 1rem;
+
+  --shadow-primary:
+    inset 0 1px 2px oklch(100% 0 0 / 18.82%), 0 2px 4px oklch(0 0 0 / 18.82%),
+    0 4px 8px oklch(0 0 0 / 8.24%);
 }
 
 * {
