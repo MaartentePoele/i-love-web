@@ -15,10 +15,18 @@ header {
   align-items: center;
   padding: 1rem;
 
+  nav {
+    width: 100%;
+  }
+
   ul {
     display: flex;
     list-style: none;
     gap: 1rem;
+
+    .language {
+      margin-left: auto;
+    }
 
     a {
       text-decoration: none;
@@ -33,49 +41,92 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
-  /* background-color: var(--bg-secondary); */
 }
 
 .hero {
   border: 1px solid var(--bg-tertiary);
-  height: 200px;
+  /* height: 200px; */
+  padding: 1rem;
   width: 100%;
   display: grid;
-  /* grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr); */
   grid-template-areas:
     "img name name"
     "img job job"
-    "img socials"
-    "img buttons";
+    "img socials socials"
+    "img buttons buttons";
 
   img {
+    place-self: center;
     height: 150px;
     border-radius: 50%;
     grid-area: img;
   }
 
-  h1 {
+  .name {
     grid-area: name;
+    align-self: flex-end;
   }
 
-  p {
+  .job {
     grid-area: job;
   }
 
   .socials {
     grid-area: socials;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    a {
+      color: var(--text-primary);
+      text-decoration: none;
+    }
   }
 
   .cta-buttons {
     grid-area: buttons;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 1rem;
+      color: var(--text-primary);
+      text-decoration: none;
+    }
   }
 }
 
 .tech-stack {
   border: 1px solid var(--bg-tertiary);
-  height: 200px;
+  /* height: 300px; */
   width: 100%;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
+
+  div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid var(--bg-tertiary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
+
+    .logo {
+      background-color: var(--bg-tertiary);
+      width: 40px;
+      height: 40px;
+    }
+  }
 }
 
 .education {
