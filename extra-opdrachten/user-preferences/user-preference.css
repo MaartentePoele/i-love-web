@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  background-color: oklch(90% 0 0);
+}
+
+div {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.prm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+
+  p {
+    animation: --rotate 2s infinite linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes --rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.prt {
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  img {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .transparent-box {
+    position: absolute;
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+
+    @media (prefers-reduced-transparency) {
+      opacity: 0.8;
+    }
+  }
+}
+
+.pc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ecae6;
+
+  p {
+    font-size: 5rem;
+    color: #219ebc;
+
+    @media (prefers-contrast: more) {
+      color: black;
+    }
+  }
+}
+
+.fc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8ecae6;
+
+  p {
+    font-size: 5rem;
+    color: #219ebc;
+
+    @media (forced-colors: active) {
+      border: 1px solid white;
+    }
+  }
+}
+
+.pcs {
+  background: linear-gradient(45deg, #050b18, #2e1065);
+
+  @media (prefers-color-scheme: light) {
+    background: linear-gradient(45deg, #fb7185, #ffd670);
+  }
+}

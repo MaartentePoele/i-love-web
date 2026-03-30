@@ -1,0 +1,5 @@
+div {
+  background-color: lime;
+  width: attr(data-width);
+  padding: 1rem;
+}

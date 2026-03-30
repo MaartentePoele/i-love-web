@@ -1,0 +1,19 @@
+body {
+  display: flex;
+}
+
+.anchor, .target {
+  padding: 1rem;
+}
+
+.anchor {
+  background-color: green;
+  anchor-name: --anchor;
+}
+
+.target {
+  background-color: red;
+  position: absolute;
+  position-anchor: --anchor;
+  position-area: bottom right;
+}
