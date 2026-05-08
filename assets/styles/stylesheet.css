@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   color-scheme: light dark;
 
   --bg-primary: light-dark(oklch(90% 0 0), oklch(10% 0 0));
