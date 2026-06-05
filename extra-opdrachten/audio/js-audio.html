@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Audio met JS</title>
+<script type="module">
+  // Laad het geluid in
+  let pop = new Audio("pop.mp3")
+  
+  const button = document.querySelector('#btn');
+  
+  button.addEventListener('click', function () {
+    // Speel het geluid af
+    pop.play();
+  });
+</script>
+<button id="btn">Koop die pizza</button>
