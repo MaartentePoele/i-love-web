@@ -1,8 +1,143 @@
-main {
-  /* Centers all the content */
-  margin: 0 auto;
-  max-width: 650px;
-  width: 100%;
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1.5rem 1rem;
+
+  a {
+    color: var(--text-muted);
+    text-decoration: none;
+    border-radius: 0.5rem;
+
+    &:hover {
+      color: var(--text);
+    }
+  }
+
+  .theme-switch {
+    width: 24px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    margin-left: auto;
+  }
 }
 
+/* HERO SECTION */
+.hero-section {
+  display: grid;
+  gap: 1rem;
 
+  .hero-section-header {
+    display: grid;
+    align-items: center;
+    grid-template-areas:
+      "profile-picture name"
+      "profile-picture job-title"
+      "profile-picture location";
+
+    .profile-picture {
+      background-color: var(--text);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      grid-area: profile-picture;
+    }
+
+    .name {
+      font-size: var(--font-l);
+      color: var(--text);
+      grid-area: name;
+    }
+
+    .job-title {
+      font-size: var(--font-m);
+      color: var(--text-muted);
+      grid-area: job-title;
+    }
+
+    .location {
+      font-size: var(--font-s);
+      color: var(--text-muted);
+      font-style: normal;
+      grid-area: location;
+    }
+  }
+
+  .description {
+    color: var(--text);
+  }
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    a {
+      display: inline-flex;
+    }
+  }
+
+  .github-icon,
+  .linkedin-icon,
+  .email-icon {
+    cursor: pointer;
+    color: var(--text-muted);
+    width: 1.5rem;
+    height: 1.5rem;
+
+    &:hover {
+      color: var(--text);
+    }
+  }
+
+  .resume-button {
+    border: none;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: var(--bg);
+    padding: 0.5rem 1rem;
+    font-size: var(--font-s);
+    color: var(--text);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--bg-light);
+    }
+
+    .resume-icon {
+      cursor: pointer;
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--text);
+    }
+  }
+}
+
+.tech-stack {
+  display: grid;
+  gap: 0.5rem;
+  /* padding: 1.25rem 1rem; */
+
+  .technology {
+    border-radius: 0.5rem;
+    background-color: var(--bg);
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--text);
+
+    .technology-logo {
+      width: 2rem;
+      height: 2rem;
+      background-color: var(--bg-light);
+      border-radius: 0.25rem;
+    }
+  }
+}

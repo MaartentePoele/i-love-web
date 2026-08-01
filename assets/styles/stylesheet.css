@@ -3,29 +3,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 :root {
   color-scheme: dark;
 
-  --primary: light-dark(
-    oklch(0.65 0.15 264),
-    oklch(0.9 0.17 100)
-  ); /* Good video */
+  --primary: light-dark(oklch(0.65 0.15 264), oklch(0.9 0.17 100));
   --primary: light-dark(oklch(0.76 0.1 264), oklch(0.76 0.1 84)); /* Website */
 
   --bg-dark: light-dark(oklch(0.92 0 264), oklch(0.1 0 264));
-  --bg: light-dark(oklch(0.96 0 264), oklch(0.15 0 264)); /* 0.15 or 0.2 */
-  --bg-light: light-dark(oklch(1 0 264), oklch(0.2 0 264)); /* 0.2 or 0.3 */
+  --bg: light-dark(oklch(0.96 0 264), oklch(0.2 0 264)); 
+  --bg-light: light-dark(oklch(1 0 264), oklch(0.3 0 264));
 
   --text: light-dark(oklch(0.15 0 264), oklch(0.96 0 264));
   --text-muted: light-dark(oklch(0.4 0 264), oklch(0.76 0 264));
 
+  --font-xs: 0.75rem;
+  --font-s: 1rem;
+  --font-m: 1.25rem;
+  --font-l: 1.5rem;
+
   --border: light-dark(oklch(0.6 0 264), oklch(0.4 0 264));
   --border-muted: light-dark(oklch(0.7 0 264), oklch(0.3 0 264));
-  --border-card-color: light-dark(var(--bg), var(--border));
-  --border-card: 1px solid var(--border-card-color);
 
   --highlight: light-dark(
     oklch(1 0 264),
@@ -41,5 +41,61 @@
 }
 
 body {
+  /* Centers all the content */
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+
   background-color: var(--bg-dark);
 }
+
+main {
+  padding: 1.5rem 1rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Theme Switch */
+/* @media (prefers-color-scheme: light) {
+  .sun {
+    display: none;
+  }
+
+  .moon {
+    display: block;
+  }
+
+  html:has(#theme-switch:checked) {
+    color-scheme: dark;
+
+    .sun {
+      display: block;
+    }
+
+    .moon {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .sun {
+    display: block;
+  }
+
+  .moon {
+    display: none;
+  }
+
+  html:has(#theme-switch:checked) {
+    color-scheme: light;
+
+    .sun {
+      display: none;
+    }
+
+    .moon {
+      display: block;
+    }
+  }
+} */
