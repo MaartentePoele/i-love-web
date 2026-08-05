@@ -34,34 +34,6 @@ header:nth-of-type(2) {
   }
 }
 
-header:nth-of-type(3) {
-  gap: 1rem;
-
-  a {
-    display: inline-flex;
-    position: relative;
-    padding: 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      height: 2px;
-      background-color: var(--black-white-muted);
-
-      @media (prefers-reduced-motion: no-preference) {
-        transition: 0.3s ease-out;
-      }
-    }
-
-    &:hover::after {
-      width: 100%;
-    }
-  }
-}
-
 section {
   display: flex;
   gap: 1rem;

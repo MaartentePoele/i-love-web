@@ -41,8 +41,8 @@
 
     .profile-picture {
       background-color: var(--text);
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       grid-area: profile-picture;
     }
@@ -55,13 +55,11 @@
 
     .job-title {
       font-size: var(--font-m);
-      color: var(--text-muted);
       grid-area: job-title;
     }
 
     .location {
       font-size: var(--font-s);
-      color: var(--text-muted);
       font-style: normal;
       grid-area: location;
     }
@@ -85,7 +83,6 @@
   .linkedin-icon,
   .email-icon {
     cursor: pointer;
-    color: var(--text-muted);
     width: 1.5rem;
     height: 1.5rem;
 
@@ -119,25 +116,117 @@
   }
 }
 
+/* TECH STACK */
 .tech-stack {
   display: grid;
   gap: 0.5rem;
-  /* padding: 1.25rem 1rem; */
+  .technology-list {
+    display: grid;
+    gap: 0.5rem;
 
-  .technology {
-    border-radius: 0.5rem;
+    .technology-item {
+      border-radius: 0.5rem;
+      background-color: var(--bg);
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--text);
+      font-weight: bold;
+
+      .technology-logo {
+        width: 3rem;
+        height: 3rem;
+        background-color: var(--bg-light);
+        border-radius: 0.25rem;
+      }
+    }
+  }
+}
+
+.projects {
+  display: grid;
+  gap: 0.5rem;
+
+  .project {
     background-color: var(--bg);
-    padding: 1rem 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: var(--text);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    display: grid;
+    gap: 0.5rem;
 
-    .technology-logo {
-      width: 2rem;
-      height: 2rem;
+    .project-preview {
+      aspect-ratio: 16 / 9;
       background-color: var(--bg-light);
       border-radius: 0.25rem;
     }
+
+    .project-title {
+      color: var(--text);
+      font-size: var(--font-m);
+    }
+
+    .pills-wrapper {
+      display: flex;
+      gap: 0.5rem;
+
+      .pill {
+        background-color: var(--bg-light);
+        border-radius: 99rem;
+        padding: 0.25rem 0.5rem;
+        font-size: var(--font-xs);
+      }
+    }
+    .project-link-wrapper {
+      display: flex;
+      gap: 1rem;
+
+      .website-link,
+      .github-link {
+        display: flex;
+        gap: 0.5rem;
+        width: fit-content;
+        background-color: var(--bg-light);
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        color: var(--text);
+
+        &:hover {
+          background-color: oklch(0.4 0 0);
+        }
+
+        .website-icon,
+        .github-icon {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+
+  a {
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      &:hover {
+        color: var(--text);
+      }
+    }
+  }
+
+  .linkedin-link {
+    margin-left: auto;
   }
 }
