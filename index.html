@@ -9,20 +9,56 @@
   </head>
 
   <body>
-    <header class="main-header">
-      <a href="">home</a>
-      <a href="">about</a>
-      <a href="">projects</a>
-      <div class="theme-switch"></div>
+    <header class="site-header">
+      <nav class="site-nav">
+        <a class="nav-links" href="">home</a>
+        <a class="nav-links" href="">about</a>
+        <a class="nav-links" href="">projects</a>
+      </nav>
+
+      <label class="theme-switch">
+        <input class="theme-checkbox" type="checkbox" id="theme-switch" />
+        <svg
+          class="sun-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2"></path>
+          <path d="M12 20v2"></path>
+          <path d="m4.93 4.93 1.41 1.41"></path>
+          <path d="m17.66 17.66 1.41 1.41"></path>
+          <path d="M2 12h2"></path>
+          <path d="M20 12h2"></path>
+          <path d="m6.34 17.66-1.41 1.41"></path>
+          <path d="m19.07 4.93-1.41 1.41"></path>
+        </svg>
+        <svg
+          class="moon-icon"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+      </label>
     </header>
 
     <main>
       <section class="hero-section">
-        <header class="hero-section-header">
-          <div class="profile-picture"></div>
+        <header class="hero-header">
+          <img
+            src="/assets/images/profile-picture.JPG"
+            class="profile-picture"
+          />
           <h1 class="name">Maarten te Poele</h1>
           <h2 class="job-title">Frontend Developer</h2>
-          <address class="location">Amsterdam, Netherlands</address>
+          <p class="location">Amsterdam, Netherlands</p>
         </header>
 
         <p class="description">
@@ -30,7 +66,7 @@
           Progressively Enhanced.
         </p>
 
-        <div class="icon-wrapper">
+        <nav class="CTA">
           <button class="resume-button">
             <svg
               class="resume-icon"
@@ -92,37 +128,80 @@
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
-        </div>
+        </nav>
       </section>
+
       <section class="tech-stack">
         <h3 class="section-title">Tech stack</h3>
         <ul class="technology-list">
           <li class="technology-item">
-            <div class="technology-logo"></div>
+            <img
+              class="technology-logo"
+              src="/assets/logos/html.png"
+              alt="HTML logo"
+            />
             HTML
           </li>
           <li class="technology-item">
-            <div class="technology-logo"></div>
+            <img
+              class="technology-logo"
+              src="/assets/logos/css.png"
+              alt="CSS logo"
+            />
             CSS
           </li>
           <li class="technology-item">
-            <div class="technology-logo"></div>
+            <img
+              class="technology-logo"
+              src="/assets/logos/javascript.png"
+              alt="JavaScript logo"
+            />
             JavaScript
           </li>
           <li class="technology-item">
-            <div class="technology-logo"></div>
+            <img
+              class="technology-logo"
+              src="/assets/logos/shopify.png"
+              alt="Shopify logo"
+            />
             Liquid
           </li>
           <li class="technology-item">
-            <div class="technology-logo"></div>
+            <img
+              class="technology-logo"
+              src="/assets/logos/nodejs.png"
+              alt="NodeJS logo"
+            />
             NodeJS
           </li>
           <li class="technology-item">
-            <div class="technology-logo"></div>
+            <div class="express-logo"></div>
             Express
           </li>
         </ul>
       </section>
+
+      <section class="education">
+        <h3 class="section-title">Education</h3>
+        <article class="education-item">
+          <h4>Frontend Design & Development</h4>
+          <p class="school-info">
+            <span>Hogeschool van Amsterdam</span>
+            <span>2025 - 2027</span>
+          </p>
+          <ul class="achievements">
+            <li>Learnt how to build websites from scratch</li>
+            <li>8 projects for real clients</li>
+          </ul>
+          <p>Collaborated with:</p>
+          <ul class="collaborations">
+            <li class="collaboration"><a href="">Funda</a></li>
+            <li class="collaboration"><a href="">Milledoni</a></li>
+            <li class="collaboration"><a href="">Buurtcampuskrant</a></li>
+          </ul>
+        </article>
+      </section>
+
       <section class="projects" id="debug">
         <h3 class="section-title">Projects</h3>
         <article class="project">
@@ -132,11 +211,11 @@
             Description made a little bit longer so that it spans multiple
             lines.
           </p>
-          <div class="pills-wrapper">
-            <div class="pill">HTML</div>
-            <div class="pill">CSS</div>
-            <div class="pill">JavaScript</div>
-          </div>
+          <ul class="pills-wrapper">
+            <li class="pill">HTML</li>
+            <li class="pill">CSS</li>
+            <li class="pill">JavaScript</li>
+          </ul>
           <div class="project-link-wrapper">
             <a class="website-link">
               <svg
@@ -175,6 +254,7 @@
         </article>
       </section>
     </main>
+
     <footer>
       <p>Maarten te Poele</p>
       <a class="linkedin-link">

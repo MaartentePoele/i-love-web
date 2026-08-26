@@ -7,17 +7,17 @@
 }
 
 :root {
-  color-scheme: dark;
+  color-scheme: light dark;
 
   --primary: light-dark(oklch(0.65 0.15 264), oklch(0.9 0.17 100));
-  --secondary: light-dark(oklch(0.9 0.17 100), oklch(0.65 0.15 264));
+  /* --secondary: light-dark(oklch(0.9 0.17 100), oklch(0.65 0.15 264)); */
 
   --bg-dark: light-dark(oklch(0.92 0 264), oklch(0.1 0 264));
   --bg: light-dark(oklch(0.96 0 264), oklch(0.2 0 264));
   --bg-light: light-dark(oklch(1 0 264), oklch(0.3 0 264));
 
-  --text: light-dark(oklch(0.15 0 264), oklch(0.96 0 264));
-  --text-muted: light-dark(oklch(0.4 0 264), oklch(0.76 0 264));
+  --content: light-dark(oklch(0.15 0 264), oklch(0.96 0 264));
+  --content-muted: light-dark(oklch(0.4 0 264), oklch(0.76 0 264));
 
   --font-xs: 0.75rem;
   --font-s: 1rem;
@@ -52,16 +52,79 @@ body {
   width: 100%;
 
   background-color: var(--bg-dark);
-  color: var(--text-muted);
+  color: var(--content-muted);
+}
+
+.site-header,
+main,
+footer {
+  padding: 1.5rem 1rem;
 }
 
 main {
-  padding: 1.5rem 1rem;
   display: grid;
   gap: 2rem;
 }
 
 .section-title {
-  color: var(--text);
+  color: var(--content);
   font-size: var(--font-m);
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  
+  use {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+/* Theme Switch */
+@media (prefers-color-scheme: light) {
+  .sun-icon {
+    display: none;
+  }
+
+  .moon-icon {
+    display: block;
+  }
+
+  html:has(#theme-switch:checked) {
+    color-scheme: dark;
+
+    .sun-icon {
+      display: block;
+    }
+
+    .moon-icon {
+      display: none;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .sun-icon {
+    display: block;
+  }
+
+  .moon-icon {
+    display: none;
+  }
+
+  html:has(#theme-switch:checked) {
+    color-scheme: light;
+
+    .sun-icon {
+      display: none;
+    }
+
+    .moon-icon {
+      display: block;
+    }
+  }
 }
