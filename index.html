@@ -10,22 +10,15 @@
 
   <body>
     <header class="site-header">
-      <nav class="site-nav">
-        <a class="nav-links" href="">home</a>
-        <a class="nav-links" href="">about</a>
-        <a class="nav-links" href="">projects</a>
+      <nav>
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">projects</a>
       </nav>
 
-      <label class="theme-switch">
-        <input class="theme-checkbox" type="checkbox" id="theme-switch" />
-        <svg
-          class="sun-icon"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
+      <label>
+        <input type="checkbox" id="theme-switch" />
+        <svg class="sun-icon">
           <circle cx="12" cy="12" r="4"></circle>
           <path d="M12 2v2"></path>
           <path d="M12 20v2"></path>
@@ -36,14 +29,7 @@
           <path d="m6.34 17.66-1.41 1.41"></path>
           <path d="m19.07 4.93-1.41 1.41"></path>
         </svg>
-        <svg
-          class="moon-icon"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
+        <svg class="moon-icon">
           <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
         </svg>
       </label>
@@ -53,29 +39,23 @@
       <section class="hero-section">
         <header class="hero-header">
           <img
-            src="/assets/images/profile-picture.JPG"
             class="profile-picture"
+            src="/assets/images/profile-picture.JPG"
+            alt="Profile picture"
           />
-          <h1 class="name">Maarten te Poele</h1>
-          <h2 class="job-title">Frontend Developer</h2>
-          <p class="location">Amsterdam, Netherlands</p>
+          <h1>Maarten te Poele</h1>
+          <h2>Frontend Developer</h2>
+          <p>Amsterdam, Netherlands</p>
         </header>
 
-        <p class="description">
+        <p>
           I make RAPPE websites: Responsive, Accessible, Performant &
           Progressively Enhanced.
         </p>
 
-        <nav class="CTA">
-          <button class="resume-button">
-            <svg
-              class="resume-icon"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+        <nav>
+          <button>
+            <svg class="resume-icon">
               <path
                 d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
               ></path>
@@ -86,15 +66,8 @@
             Resume
           </button>
 
-          <a>
-            <svg
-              class="linkedin-icon"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+          <a href="">
+            <svg>
               <path
                 d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
               ></path>
@@ -102,29 +75,15 @@
               <circle cx="4" cy="4" r="2"></circle>
             </svg>
           </a>
-          <a>
-            <svg
-              class="github-icon"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
+          <a href="">
+            <svg>
               <path
                 d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
               ></path>
               <path d="M9 18c-4.51 2-5-2-7-2"></path>
             </svg>
           </a>
-          <svg
-            class="email-icon"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
+          <svg>
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </svg>
@@ -133,48 +92,28 @@
 
       <section class="tech-stack">
         <h3 class="section-title">Tech stack</h3>
-        <ul class="technology-list">
-          <li class="technology-item">
-            <img
-              class="technology-logo"
-              src="/assets/logos/html.png"
-              alt="HTML logo"
-            />
+        <ul>
+          <li>
+            <img src="/assets/logos/html.png" alt="HTML logo" />
             HTML
           </li>
-          <li class="technology-item">
-            <img
-              class="technology-logo"
-              src="/assets/logos/css.png"
-              alt="CSS logo"
-            />
+          <li>
+            <img src="/assets/logos/css.png" alt="CSS logo" />
             CSS
           </li>
-          <li class="technology-item">
-            <img
-              class="technology-logo"
-              src="/assets/logos/javascript.png"
-              alt="JavaScript logo"
-            />
+          <li>
+            <img src="/assets/logos/javascript.png" alt="JavaScript logo" />
             JavaScript
           </li>
-          <li class="technology-item">
-            <img
-              class="technology-logo"
-              src="/assets/logos/shopify.png"
-              alt="Shopify logo"
-            />
+          <li>
+            <img src="/assets/logos/shopify.png" alt="Shopify logo" />
             Liquid
           </li>
-          <li class="technology-item">
-            <img
-              class="technology-logo"
-              src="/assets/logos/nodejs.png"
-              alt="NodeJS logo"
-            />
+          <li>
+            <img src="/assets/logos/nodejs.png" alt="NodeJS logo" />
             NodeJS
           </li>
-          <li class="technology-item">
+          <li>
             <div class="express-logo"></div>
             Express
           </li>
@@ -183,49 +122,42 @@
 
       <section class="education">
         <h3 class="section-title">Education</h3>
-        <article class="education-item">
+        <article>
           <h4>Frontend Design & Development</h4>
-          <p class="school-info">
+          <p>
             <span>Hogeschool van Amsterdam</span>
             <span>2025 - 2027</span>
           </p>
-          <ul class="achievements">
+          <ul>
             <li>Learnt how to build websites from scratch</li>
             <li>8 projects for real clients</li>
           </ul>
           <p>Collaborated with:</p>
-          <ul class="collaborations">
-            <li class="collaboration"><a href="">Funda</a></li>
-            <li class="collaboration"><a href="">Milledoni</a></li>
-            <li class="collaboration"><a href="">Buurtcampuskrant</a></li>
+          <ul>
+            <li><a href="">Funda</a></li>
+            <li><a href="">Milledoni</a></li>
+            <li><a href="">Buurtcampuskrant</a></li>
           </ul>
         </article>
       </section>
 
-      <section class="projects" id="debug">
+      <section class="projects">
         <h3 class="section-title">Projects</h3>
-        <article class="project">
+        <article>
           <div class="project-preview"></div>
-          <h4 class="project-title">Project title</h4>
-          <p class="project-description">
+          <h4>Project title</h4>
+          <p>
             Description made a little bit longer so that it spans multiple
             lines.
           </p>
-          <ul class="pills-wrapper">
-            <li class="pill">HTML</li>
-            <li class="pill">CSS</li>
-            <li class="pill">JavaScript</li>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
           </ul>
           <div class="project-link-wrapper">
-            <a class="website-link">
-              <svg
-                class="website-icon"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+            <a>
+              <svg class="website-icon">
                 <circle cx="12" cy="12" r="10"></circle>
                 <path
                   d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
@@ -234,15 +166,8 @@
               </svg>
               Website
             </a>
-            <a class="github-link">
-              <svg
-                class="github-icon"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+            <a>
+              <svg class="github-icon">
                 <path
                   d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
                 ></path>
@@ -257,14 +182,8 @@
 
     <footer>
       <p>Maarten te Poele</p>
-      <a class="linkedin-link">
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
+      <a class="linkedin-link" href="">
+        <svg>
           <path
             d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
           ></path>
@@ -272,28 +191,16 @@
           <circle cx="4" cy="4" r="2"></circle>
         </svg>
       </a>
-      <a>
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
+      <a href="">
+        <svg>
           <path
             d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
           ></path>
           <path d="M9 18c-4.51 2-5-2-7-2"></path>
         </svg>
       </a>
-      <a>
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
+      <a href="">
+        <svg>
           <rect width="20" height="16" x="2" y="4" rx="2"></rect>
           <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
         </svg>

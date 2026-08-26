@@ -3,11 +3,11 @@
   display: flex;
   align-items: center;
 
-  .site-nav {
+  nav {
     display: flex;
     gap: 1rem;
 
-    .nav-links {
+    a {
       color: var(--content-muted);
       text-decoration: none;
       border-radius: 0.5rem;
@@ -19,11 +19,11 @@
     }
   }
 
-  .theme-switch {
+  label {
     margin-left: auto;
     cursor: pointer;
 
-    .theme-checkbox {
+    input {
       display: none;
     }
 
@@ -45,7 +45,7 @@
   flex-direction: column;
   gap: 0.5rem;
 
-  .hero-header {
+  header {
     display: grid;
     align-items: center;
     grid-template-areas:
@@ -53,59 +53,50 @@
       "profile-picture job-title"
       "profile-picture location";
 
-    .profile-picture {
+    img {
       width: 4rem;
       height: 4rem;
       border-radius: 50%;
       grid-area: profile-picture;
     }
 
-    .name {
+    h1 {
       font-size: var(--font-l);
       color: var(--content);
       grid-area: name;
     }
 
-    .job-title {
+    h2 {
       font-size: var(--font-m);
       grid-area: job-title;
     }
 
-    .location {
+    p {
       font-size: var(--font-s);
       font-style: normal;
       grid-area: location;
     }
   }
 
-  .description {
+  p {
     color: var(--content);
   }
 
-  .CTA {
+  nav {
     display: flex;
     align-items: center;
     gap: 1rem;
 
     a {
+      color: var(--content-muted);
+
       svg {
         display: block;
       }
     }
   }
 
-  .github-icon,
-  .linkedin-icon,
-  .email-icon {
-    cursor: pointer;
-    transition: var(--transition-fast);
-
-    &:hover {
-      color: var(--content);
-    }
-  }
-
-  .resume-button {
+  button {
     border: none;
     display: flex;
     gap: 0.5rem;
@@ -129,6 +120,15 @@
       color: var(--content);
     }
   }
+
+  svg {
+    cursor: pointer;
+    transition: var(--transition-fast);
+
+    &:hover {
+      color: var(--content);
+    }
+  }
 }
 
 /* TECH STACK */
@@ -136,11 +136,11 @@
   display: grid;
   gap: 0.5rem;
 
-  .technology-list {
+  ul {
     display: grid;
     gap: 0.5rem;
 
-    .technology-item {
+    li {
       border-radius: 0.5rem;
       background-color: var(--bg);
       padding: 0.5rem;
@@ -150,7 +150,7 @@
       color: var(--content);
       font-weight: bold;
 
-      .technology-logo {
+      img {
         width: 3rem;
         height: 3rem;
         border-radius: 0.25rem;
@@ -171,23 +171,28 @@
 }
 
 /* EDUCATION */
-.education-item {
-  background-color: var(--bg);
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+.education {
+  article {
+    background-color: var(--bg);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
 
-  .school-info {
+  h4 {
+    color: var(--content);
+  }
+
+  p {
     display: flex;
     flex-direction: column;
   }
 
-  .achievements,
-  .collaborations {
+  ul {
     padding: 0 1rem;
-  }
 
-  .collaboration a {
-    color: var(--primary);
+    a {
+      color: var(--primary);
+    }
   }
 }
 
@@ -196,7 +201,7 @@
   display: grid;
   gap: 0.5rem;
 
-  .project {
+  article {
     background-color: var(--bg);
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -216,17 +221,17 @@
       border-radius: 0.25rem;
     }
 
-    .project-title {
+    h4 {
       color: var(--content);
       font-size: var(--font-m);
     }
 
-    .pills-wrapper {
+    ul {
       display: flex;
       gap: 0.5rem;
       list-style: none;
 
-      .pill {
+      li {
         background-color: var(--bg-light);
         border-radius: 99rem;
         padding: 0.25rem 0.5rem;
@@ -238,8 +243,7 @@
       display: flex;
       gap: 1rem;
 
-      .website-link,
-      .github-link {
+      a {
         display: flex;
         gap: 0.5rem;
         width: fit-content;
@@ -272,6 +276,7 @@ footer {
 
     svg {
       transition: var(--transition-fast);
+      color: var(--content-muted);
 
       &:hover {
         color: var(--content);

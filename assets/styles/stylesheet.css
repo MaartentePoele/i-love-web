@@ -74,14 +74,12 @@ main {
 svg {
   width: 1.5rem;
   height: 1.5rem;
-  
-  use {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 /* Theme Switch */
