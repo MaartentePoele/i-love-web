@@ -207,13 +207,8 @@
     border-radius: 0.5rem;
     display: grid;
     gap: 0.5rem;
-    box-shadow: var(--shadow-s);
     cursor: pointer;
     transition: var(--transition-fast);
-
-    &:hover {
-      box-shadow: var(--shadow-m);
-    }
 
     .project-preview {
       aspect-ratio: 16 / 9;
