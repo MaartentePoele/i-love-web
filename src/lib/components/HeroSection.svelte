@@ -1,0 +1,149 @@
+<script>
+  import profilePicture from "#lib/assets/images/profile-picture.jpg";
+</script>
+
+<section class="hero-section">
+  <header class="hero-header">
+    <img
+      class="profile-picture"
+      src={profilePicture}
+      alt="Profielfoto van Maarten te Poele"
+    />
+    <h1>Maarten te Poele</h1>
+    <h2>Frontend Developer</h2>
+    <p>Amsterdam, Netherlands</p>
+  </header>
+
+  <p>
+    I make RAPPE websites: Responsive, Accessible, Performant & Progressively
+    Enhanced.
+  </p>
+
+  <nav>
+    <button>
+      <svg class="resume-icon">
+        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+        ></path>
+        <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+        <path d="M12 18v-6"></path>
+        <path d="m9 15 3 3 3-3"></path>
+      </svg>
+      Resume
+    </button>
+
+    <a
+      title="linkedin link"
+      href="https://www.linkedin.com/in/maarten-te-poele-3a7a57332"
+    >
+      <svg>
+        <path
+          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+        ></path>
+        <rect width="4" height="12" x="2" y="9"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+      </svg>
+    </a>
+    <a title="github link" href="https://github.com/MaartentePoele">
+      <svg>
+        <path
+          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+        >
+        </path>
+        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+      </svg>
+    </a>
+    <svg>
+      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+    </svg>
+  </nav>
+</section>
+
+<style>
+  /* HERO SECTION */
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    header {
+      display: grid;
+      align-items: center;
+      grid-template-areas:
+        "profile-picture name"
+        "profile-picture job-title"
+        "profile-picture location";
+
+      img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        grid-area: profile-picture;
+      }
+
+      h1 {
+        font-size: var(--font-l);
+        color: var(--content);
+        grid-area: name;
+      }
+
+      h2 {
+        font-size: var(--font-m);
+        grid-area: job-title;
+      }
+
+      p {
+        font-size: var(--font-s);
+        font-style: normal;
+        grid-area: location;
+        color: var(--content-muted);
+      }
+    }
+
+    p {
+      color: var(--content);
+    }
+
+    button {
+      border: none;
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      border-radius: 0.5rem;
+      background-color: var(--bg);
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border-muted);
+      font-size: var(--font-s);
+      color: var(--content);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--bg-light);
+        box-shadow: var(--shadow-m);
+      }
+
+      .resume-icon {
+        cursor: pointer;
+        color: var(--content);
+      }
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        color: var(--content-muted);
+
+        &:hover {
+          color: var(--content);
+        }
+
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
+</style>
