@@ -9,6 +9,7 @@
 
 <svelte:head>
   <link rel="icon" href={favicon} />
+  <title>Portfolio - Maarten te Poele</title>
 </svelte:head>
 
 <Header />
