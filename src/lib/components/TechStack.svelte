@@ -1,36 +1,35 @@
-<section class="tech-stack">
+<section>
   <h3 class="section-title">Tech stack</h3>
   <ul>
     <li>
-      <img src="/assets/logos/html.png" alt="HTML logo" />
+      <div></div>
       HTML
     </li>
     <li>
-      <img src="./assets/logos/css.png" alt="CSS logo" />
+      <div></div>
       CSS
     </li>
     <li>
-      <img src="assets/logos/javascript.png" alt="JavaScript logo" />
+      <div></div>
       JavaScript
     </li>
     <li>
-      <img src="/assets/logos/shopify.png" alt="Shopify logo" />
+      <div></div>
       Liquid
     </li>
     <li>
-      <img src="/assets/logos/nodejs.png" alt="NodeJS logo" />
+      <div></div>
       NodeJS
     </li>
     <li>
-      <div class="express-logo"></div>
+      <div></div>
       Express
     </li>
   </ul>
 </section>
 
 <style>
-  /* TECH STACK */
-  .tech-stack {
+  section {
     display: grid;
     gap: 0.5rem;
 
@@ -50,21 +49,11 @@
         color: var(--content);
         font-weight: bold;
 
-        img {
+        div {
           width: 3rem;
-          height: 3rem;
+          aspect-ratio: 1;
           border-radius: 0.25rem;
-        }
-
-        .express-logo {
-          width: 3rem;
-          height: 3rem;
-          border-radius: 0.25rem;
-          background-size: contain;
-          background-image: light-dark(
-            url("/assets/logos/express-black.png"),
-            url("/assets/logos/express-white.png")
-          );
+          background-color: var(--bg-light);
         }
       }
     }

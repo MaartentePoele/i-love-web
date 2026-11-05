@@ -4,7 +4,7 @@
   /* padding: 0; */
 }
 
-:root {
+html {
   color-scheme: light dark;
 
   --primary: light-dark(oklch(0.65 0.15 264), oklch(0.9 0.17 100));
@@ -50,7 +50,7 @@ html {
 body {
   /* Centers all the content */
   margin: 0 auto;
-  max-width: 300px; /* 600px or 64ch */
+  max-width: 64ch;
   width: 100%;
 
   background-color: var(--bg-dark);

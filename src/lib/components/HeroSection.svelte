@@ -2,8 +2,8 @@
   import profilePicture from "#lib/assets/images/profile-picture.jpg";
 </script>
 
-<section class="hero-section">
-  <header class="hero-header">
+<section>
+  <header>
     <img
       class="profile-picture"
       src={profilePicture}
@@ -20,17 +20,6 @@
   </p>
 
   <nav>
-    <button>
-      <svg class="resume-icon">
-        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
-        ></path>
-        <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
-        <path d="M12 18v-6"></path>
-        <path d="m9 15 3 3 3-3"></path>
-      </svg>
-      Resume
-    </button>
-
     <a
       title="linkedin link"
       href="https://www.linkedin.com/in/maarten-te-poele-3a7a57332"
@@ -52,16 +41,12 @@
         <path d="M9 18c-4.51 2-5-2-7-2"></path>
       </svg>
     </a>
-    <svg>
-      <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-    </svg>
   </nav>
 </section>
 
 <style>
   /* HERO SECTION */
-  .hero-section {
+  section {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -102,30 +87,6 @@
 
     p {
       color: var(--content);
-    }
-
-    button {
-      border: none;
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      border-radius: 0.5rem;
-      background-color: var(--bg);
-      padding: 0.5rem 1rem;
-      border: 1px solid var(--border-muted);
-      font-size: var(--font-s);
-      color: var(--content);
-      cursor: pointer;
-
-      &:hover {
-        background-color: var(--bg-light);
-        box-shadow: var(--shadow-m);
-      }
-
-      .resume-icon {
-        cursor: pointer;
-        color: var(--content);
-      }
     }
 
     nav {
