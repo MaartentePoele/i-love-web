@@ -1,23 +1,33 @@
 <script>
   import ThemeSwitch from "#lib/components/ThemeSwitch.svelte";
+  import { page } from "$app/state";
 </script>
 
 <header class="site-header">
   <nav>
-    <a href="/">home</a>
-    <a href="/about">about</a>
-    <a href="/projects">projects</a>
-    <a href="/garden">garden</a>
+    <a href="/" class:active={page.url.pathname === "/"}>home</a>
+    <a href="/about" class:active={page.url.pathname === "/about"}>about</a>
+    <a href="/projects" class:active={page.url.pathname === "/projects"}>projects</a>
+    <a href="/garden" class:active={page.url.pathname === "/garden"}>garden</a>
   </nav>
 
   <ThemeSwitch />
 </header>
 
 <style>
+  .active {
+    background-color: var(--bg);
+    color: var(--content);
+
+    &:hover {
+      background-color: var(--bg-light);
+    }
+  }
+
   header {
     display: flex;
     align-items: center;
-    
+
     nav {
       display: flex;
       flex-wrap: balance;
@@ -28,11 +38,10 @@
         text-decoration: none;
         border-radius: 0.5rem;
         transition: var(--transition-fast);
-        background-color: var(--bg);
         padding: 0.25rem 0.5rem;
 
         &:hover {
-          color: var(--content);
+          background-color: var(--bg);
         }
       }
     }

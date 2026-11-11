@@ -20,23 +20,17 @@
   label {
     margin-left: auto;
     cursor: pointer;
-    background-color: var(--bg);
     padding: 0.25rem;
     border-radius: 0.5rem;
     align-self: start;
 
+    &:hover {
+      background-color: var(--bg);
+      color: var(--primary);
+    }
+
     input {
       display: none;
-    }
-
-    .sun-icon,
-    .moon-icon {
-      transition: var(--transition-fast);
-    }
-
-    .sun-icon:hover,
-    .moon-icon:hover {
-      stroke: var(--primary);
     }
   }
 

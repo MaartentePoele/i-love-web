@@ -45,25 +45,32 @@
 </section>
 
 <style>
-  /* HERO SECTION */
   section {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    container-type: inline-size;
 
     header {
       display: grid;
-      align-items: center;
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: max-content max-content max-content;
+
       grid-template-areas:
         "profile-picture name"
         "profile-picture job-title"
         "profile-picture location";
 
+      @container (width > 280px) {
+        column-gap: 1rem;
+      }
+
       img {
-        width: 4rem;
-        height: 4rem;
+        width: clamp(4rem, 20cqw, 8rem);
+        aspect-ratio: 1;
         border-radius: 50%;
         grid-area: profile-picture;
+        align-self: center;
       }
 
       h1 {
