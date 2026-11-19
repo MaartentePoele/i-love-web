@@ -32,6 +32,11 @@
   section {
     display: grid;
     gap: 0.5rem;
+    padding: 1.5rem 1rem;
+
+    h3 {
+      color: var(--content);
+    }
 
     ul {
       display: grid;
@@ -46,7 +51,6 @@
         display: flex;
         align-items: center;
         gap: 1rem;
-        color: var(--content);
         font-weight: bold;
 
         div {

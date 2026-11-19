@@ -1,5 +1,5 @@
 <section>
-  <h3 class="section-title">Education</h3>
+  <h3>Education</h3>
   <article>
     <h4>Frontend Design & Development</h4>
     <p>
@@ -23,6 +23,13 @@
 
 <style>
   section {
+    padding: 1.5rem 1rem;
+
+    h3 {
+      font-size: var(--font-m);
+      color: var(--content);
+    }
+
     h4 {
       color: var(--content);
     }

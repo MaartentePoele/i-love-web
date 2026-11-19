@@ -7,7 +7,7 @@
 
 <main>
   <HeroSection />
-  <TechStack />
   <Projects />
+  <TechStack />
   <Education />
 </main>

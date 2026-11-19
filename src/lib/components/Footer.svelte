@@ -27,6 +27,7 @@
   footer {
     display: flex;
     gap: 1rem;
+    padding: 1.5rem 1rem;
 
     a {
       display: flex;

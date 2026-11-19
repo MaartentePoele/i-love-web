@@ -1,5 +1,5 @@
-<section class="projects">
-  <h3 class="section-title">Projects</h3>
+<section>
+  <h3>Projects</h3>
   <article>
     <div class="project-preview"></div>
     <h4>Project title</h4>
@@ -33,16 +33,21 @@
 </section>
 
 <style>
-  /* PROJECTS */
-  .projects {
+  section {
     display: grid;
     gap: 0.5rem;
+    padding: 1.5rem 1rem;
+
+    h3 {
+      font-size: var(--font-m);
+      color: var(--content);
+    }
 
     article {
       background-color: var(--bg);
-      padding: 0.5rem;
       border-radius: 0.5rem;
       display: grid;
+      padding: 0 0 0.5rem 0;
       gap: 0.5rem;
       cursor: pointer;
       transition: var(--transition-fast);
@@ -50,12 +55,17 @@
       .project-preview {
         aspect-ratio: 16 / 9;
         background-color: var(--bg-light);
-        border-radius: 0.25rem;
+        border-radius: 0.5rem 0.5rem 0 0;
       }
 
       h4 {
         color: var(--content);
         font-size: var(--font-m);
+        padding: 0 0.5rem;
+      }
+
+      p {
+        padding: 0 0.5rem;
       }
 
       ul {
@@ -64,6 +74,7 @@
         list-style: none;
         margin: 0;
         padding: 0;
+        padding: 0 0.5rem;
 
         li {
           background-color: var(--bg-light);
@@ -76,6 +87,7 @@
       .project-link-wrapper {
         display: flex;
         gap: 1rem;
+        padding: 0 0.5rem;
 
         a {
           display: flex;
