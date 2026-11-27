@@ -36,45 +36,43 @@
   section {
     display: grid;
     gap: 0.5rem;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
 
     h3 {
-      font-size: var(--font-m);
+      font-size: var(--font-l);
       color: var(--content);
+      margin-left: 1rem;
     }
 
     article {
-      background-color: var(--bg);
       border-radius: 0.5rem;
       display: grid;
-      padding: 0 0 0.5rem 0;
-      gap: 0.5rem;
+      grid-template-columns: 1rem 1fr 1rem;
+      row-gap: 0.5rem;
       cursor: pointer;
       transition: var(--transition-fast);
+
+      /* Puts everything in the center column */
+      & > * {
+        grid-column: 2;
+      }
 
       .project-preview {
         aspect-ratio: 16 / 9;
         background-color: var(--bg-light);
-        border-radius: 0.5rem 0.5rem 0 0;
+        grid-column: 1 / -1;
+        /* border: 1px solid red; */
       }
 
       h4 {
         color: var(--content);
         font-size: var(--font-m);
-        padding: 0 0.5rem;
-      }
-
-      p {
-        padding: 0 0.5rem;
       }
 
       ul {
         display: flex;
         gap: 0.5rem;
         list-style: none;
-        margin: 0;
-        padding: 0;
-        padding: 0 0.5rem;
 
         li {
           background-color: var(--bg-light);
@@ -87,15 +85,10 @@
       .project-link-wrapper {
         display: flex;
         gap: 1rem;
-        padding: 0 0.5rem;
 
         a {
           display: flex;
           gap: 0.5rem;
-          width: fit-content;
-          background-color: var(--bg-light);
-          padding: 0.5rem 1rem;
-          border-radius: 0.5rem;
           text-decoration: none;
           color: var(--content);
         }

@@ -26,7 +26,7 @@
     padding: 1.5rem 1rem;
 
     h3 {
-      font-size: var(--font-m);
+      font-size: var(--font-l);
       color: var(--content);
     }
 
@@ -50,6 +50,10 @@
 
       a {
         color: var(--content);
+
+        &:hover {
+          color: var(--primary);
+        }
       }
     }
   }

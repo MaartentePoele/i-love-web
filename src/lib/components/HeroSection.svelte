@@ -14,8 +14,8 @@
   </header>
 
   <p>
-    I make RAPPE websites: Responsive, Accessible, Performant & Progressively
-    Enhanced.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis
+    purus.
   </p>
 
   <nav>
@@ -109,6 +109,10 @@
         align-self: start;
         font-weight: normal;
       }
+    }
+
+    p {
+      text-wrap: pretty;
     }
 
     nav {
